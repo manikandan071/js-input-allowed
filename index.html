@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+	<style>
+	.user-ip{
+		width:500px;
+		margin:0 auto;
+		display:flex;
+		justify-content:center;
+		padding-top:200px;
+		
+	}
+	.user-data{
+		background-color: aquamarine;
+		padding:80px 40px 60px 40px;
+		position:relative;
+		border-radius:30px;
+	}
+	.box{
+		position:relative;
+		padding:5px 5px;
+		margin-bottom:25px;
+	}
+	.box:focus{
+		outline:none;
+	}
+	.name{
+		position:absolute;
+		left:90px;
+		top:95px;	
+	}
+	.two{
+		position:relative;
+	}
+	.call{
+	position:absolute;
+	left:90px;
+	top:150px;
+	}
+	button{
+		padding:10px 20px 10px 20px ;
+		margin:20PX 0 0 70PX;
+		cursor:pointer;
+		font-weight:bold;
+	}
+	
+	
+	</style>
+	<script src="js/main.js"></script>
+</head>
+<body>
+
+<div class="user-ip">
+<form class="user-data" >
+
+<label>NAME ;</label>
+<input class="box" type="text" id="city" placeholder="Enter your name" required onkeyup="mycity();">
+<p class="name" id="city-alert"></p><br>
+
+<label>CALL  ; </label>
+<input class="box two" type="text" id="num" placeholder="Enter your number" required onkeyup="mynumber();">
+<p class="call" id="num-alert"></p><br>
+
+<button>SUBMIT</button>
+
+</form>
+</div>
+
+
+</body>
+</html>
