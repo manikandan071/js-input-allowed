@@ -34,3 +34,16 @@ for(i=0;i<str.length;i++){
 }
 }
 console.log(sum);
+
+let find=ams(153,153)
+function ams(x,z){
+	let y=0;
+	while(x>0){
+		
+		rem=x%10;
+		y=y+(rem*rem*rem);
+		x=Math.floor(x%10);
+	}
+	
+}
+console.log(y);
